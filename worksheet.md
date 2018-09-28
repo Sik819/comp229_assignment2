@@ -338,3 +338,7 @@ We are going to do a _design_ for adding Bees to the game.  A bee is a character
 The obvious design pattern for Bees is the composite pattern.  Do a design (using UML-ish notation) of how you might apply the composite pattern to this problem.
 
 What other changes are required in the program?  How does the composite pattern fit into the current design?  Can you think of a better alternative than using the composite pattern for this problem?
+
+# Task 21
+
+There is at least one class in the current design that should be a singleton.  Identify what that class is and make it an actual singleton.  If you see more than one class that should be a singleton, apply the pattern to the others as well.  Simply making the class(es) a singleton is not enough though.  Once they are singletons you can now treat objects from those classes as globals, i.e. you no longer need to pass them around as parameters.  Modify your program to take advantage of the new singletons.
